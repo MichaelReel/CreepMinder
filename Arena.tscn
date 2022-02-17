@@ -1,0 +1,61 @@
+[gd_scene load_steps=3 format=2]
+
+[sub_resource type="CylinderMesh" id=1]
+top_radius = 50.0
+radial_segments = 8
+
+[sub_resource type="CubeMesh" id=2]
+size = Vector3( 1, 2, 38.268 )
+
+[node name="Arena" type="Spatial"]
+
+[node name="Floor" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="Wall 01" type="MeshInstance" parent="Floor"]
+transform = Transform( 0.92388, 0, -0.382683, 0, 1, 0, 0.382683, 0, 0.92388, -42.678, 2, -17.678 )
+mesh = SubResource( 2 )
+material/0 = null
+
+[node name="Wall 02" type="MeshInstance" parent="Floor"]
+transform = Transform( 0.382683, 0, -0.92388, 0, 1, 0, 0.92388, 0, 0.382683, -17.678, 2, -42.678 )
+mesh = SubResource( 2 )
+material/0 = null
+
+[node name="Wall 03" type="MeshInstance" parent="Floor"]
+transform = Transform( 0.382683, 0, 0.923879, 0, 1, 0, -0.923879, 0, 0.382683, 17.678, 2, -42.678 )
+mesh = SubResource( 2 )
+material/0 = null
+
+[node name="Wall 04" type="MeshInstance" parent="Floor"]
+transform = Transform( 0.92388, 0, 0.382683, 0, 1, 0, -0.382683, 0, 0.92388, 42.678, 2, -17.678 )
+mesh = SubResource( 2 )
+material/0 = null
+
+[node name="Wall 05" type="MeshInstance" parent="Floor"]
+transform = Transform( 0.92388, 0, -0.382683, 0, 1, 0, 0.382683, 0, 0.92388, 42.678, 2, 17.678 )
+mesh = SubResource( 2 )
+material/0 = null
+
+[node name="Wall 06" type="MeshInstance" parent="Floor"]
+transform = Transform( 0.382683, 0, -0.923879, 0, 1, 0, 0.923879, 0, 0.382683, 17.678, 2, 42.678 )
+mesh = SubResource( 2 )
+material/0 = null
+
+[node name="Wall 07" type="MeshInstance" parent="Floor"]
+transform = Transform( 0.382683, 0, 0.923879, 0, 1, 0, -0.923879, 0, 0.382683, -17.678, 2, 42.678 )
+mesh = SubResource( 2 )
+material/0 = null
+
+[node name="Wall 08" type="MeshInstance" parent="Floor"]
+transform = Transform( 0.92388, 0, 0.382683, 0, 1, 0, -0.382683, 0, 0.92388, -42.678, 2, 17.678 )
+mesh = SubResource( 2 )
+material/0 = null
+
+[node name="Position3D A" type="Position3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 45, 2, 0 )
+
+[node name="Position3D B" type="Position3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -45, 2, 0 )
