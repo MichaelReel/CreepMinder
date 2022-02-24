@@ -3,3 +3,6 @@
 [ext_resource path="res://creeps/Creep.tscn" type="PackedScene" id=1]
 
 [node name="Creep" instance=ExtResource( 1 )]
+team_name = "team_B"
+
+[editable path="OpponentDetectionZone"]
